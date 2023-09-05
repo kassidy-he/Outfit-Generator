@@ -1,0 +1,387 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "AdLib", Optima;
+	font-weight: 2px;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+  	background-image: linear-gradient(#CE38A4, #CE86C3);
+}
+
+.vintage {
+  /* visibility: hidden; */
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+.underline {
+  background-image: linear-gradient(120deg, #CE38A4 0%, #CE86C3 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.styleDropDown {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+select {
+  font-family: "VT323", Optima;
+  background-color: #F5F5D1;
+  border: solid black 5px;
+  font-size: 30px;
+}
+.generateLook {
+    display: flex;
+    justify-content: center;
+}
+ .generateButton {
+    font-size: 30px;
+    font-family: "VT323";
+    background-color: #F5F5D1
+	padding: 10px;
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  padding-right: 2px;
+  list-style: none;
+  font-size: 23px;
+}
+
+
+h2,
+h3,
+a {
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 25px;
+  f
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: lowercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+  font-family: 'VT323';
+	color: #000000;
+	font-size: 1.4em;
+}
+
+.main-nav a:hover {
+	color: #000000;
+}
+
+.hoverinfo {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+}
+
+.hoverinfo p {
+  display: none;
+  color: #000000;
+}
+
+.hoverinfo:hover p {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: #FFE016;
+}
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+
+    	.header {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+		}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+.midHeader {
+  font-family: 'VT323';
+  text-align: center;
+  margin: 10px;
+}
+
+.textBody {
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.subBody {
+  margin: 0;
+  padding-left: 15px;
+  color: bisque;
+  //display: inline;
+  
+}
+.subBody2 {
+  margin: 0;
+  padding-left: 15px;
+  color: bisque;
+  display: block;
+}
+
+.subHeader {
+	outline: none;
+	margin: 0;
+	padding-left: 15px;
+  /* padding-right: 211px; */
+  color: bisque;
+  display: inline;
+  //justify-content: space-between; 
+  
+}
+
+/* //hover sections https://codepen.io/Wking/pen/BdmpVx */
+
+img {
+  width: 300px;
+  height: 300px; 
+  object-fit: cover;
+  display: block-inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.links {
+  color: bisque; 
+  margin: 0;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  
+}
+
+.link--mneme {
+  background: 
+    linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+    linear-gradient(to right, rgba(206, 134, 195, 1), rgba(245, 245, 209, 1), rgba(255, 224, 22, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.link--mneme:hover,
+.link--mneme:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+.gallery {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly; 
+	flex-wrap: wrap;
+	margin-top: 0px;
+	padding-bottom: 15px;
+}
+
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.button--janus {
+	font-family: freight-display-pro, serif;
+	font-weight: 900;
+	width: 175px;
+	height: 120px;
+	color: #F5F5D1;
+	background: none;
+}
+
+.button--janus::before {
+	content: '';
+	background: #FFE016;
+	-webkit-clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+	clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+	transition: clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55), -webkit-clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55), background 0.5s ease;
+}
+
+.button--janus:hover::before {
+	background: #CE86C3;
+	-webkit-clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+	clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+}
+
+.button--janus::after {
+	content: '';
+	height: 86%;
+	width: 97%;
+	top: 5%;
+	border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
+	border: 1px solid #000;
+  text-decoration-color: #000014
+	transform: rotate(-20deg);
+	z-index: -1;
+	transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+}
+
+.button--janus:hover::after {
+	transform: translate3d(0,-5px,0);
+}
+
+.button--janus span {
+	display: block;
+	transition: transform 0.3s ease;
+	mix-blend-mode: difference;
+}
+
+.button--janus:hover span {
+	transform: translate3d(0,-10px,0);
+}
+
+.button--kari {
+	font-family: freight-display-pro, serif;
+	font-weight: 900;
+	font-size: 1.25rem;
+	border-radius: 50%;
+	border: 2px solid #000;
+}
+
+.button--kari > span {
+	display: inline-block;
+	transition: opacity 0.1s;
+}
+
+.button--kari:hover > span {
+	opacity: 0;
+}
+
+.button--kari .marquee {
+	transform: rotate(-2.75deg);
+}
+
+.button--kari:hover .marquee__inner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.6s;
+}
+
+.marquee {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.marquee__inner {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	--offset: 1rem;
+	--move-initial: calc(-25% + var(--offset));
+	--move-final: calc(-50% + var(--offset));
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marquee 1s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.marquee span {
+	text-align: center;
+	white-space: nowrap;
+	font-style: italic;
+	padding: 1.5rem 0.5rem;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+
+.outfitResult
+{
+	padding: 20px;
+	align-items: center;
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+
+}
+
+#banner {
+	width: 100%;
+  	background-image: url('https://blog.modsy.com/wp-content/uploads/2018/09/Cher-closet-angle-1.png');
+  	height: 500px;
+	background-position: center;
+}
